@@ -63,7 +63,7 @@ const Result = ({ isReachable, numbersArray, winnablePaths }) => {
         <div className="ml-3">
           <h3 className="text-sm font-medium text-green-800">
             Success! The goal is reachable in {winnablePaths[0].length - 1}{' '}
-            steps.
+            step(-s).
           </h3>
           <div className="mt-2 text-sm text-green-700">
             <p>The most efficient path(-s):</p>
