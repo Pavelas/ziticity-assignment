@@ -7,6 +7,10 @@
  */
 const getWinnablePaths = (data) => {
   let winnablePaths = [];
+
+  // Do not continue if provided parameter is not array or just single number
+  if (!Array.isArray(data) || data.length <= 1) return winnablePaths;
+
   let pathsInQueue = getAvailablePaths(data);
 
   // Iterate through paths in the paths queue one by one
