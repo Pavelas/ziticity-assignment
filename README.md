@@ -2,6 +2,8 @@
 
 Technical assignment for Frontend developer.
 
+- Live demo: [ziticity-assignment.zablockij.com](https://ziticity-assignment.zablockij.com)
+
 ## Get Started
 
 Clone the repository
