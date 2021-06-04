@@ -29,6 +29,14 @@ $ npm run dev
 - [React Router](https://reactrouter.com)
 - [Tailwind CSS](https://tailwindcss.com)
 
+## Demo
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/Pavelas/ziticity-assignment/main/screenshots/demo.gif"
+  alt="Demo"
+  width="100%" height="100%">
+</p>
+
 ## Idea
 
 <p align="center">
