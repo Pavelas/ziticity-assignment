@@ -64,12 +64,17 @@ const getAvailablePaths = (data, path = [0], level = 0) => {
     // Define the next level which can be reached
     const nextLevel = availableSteps + level;
 
-    // Add discovered path if the path is not out of original array bounds
-    if (nextLevel >= 0 && nextLevel < data.length)
-      discoveredPaths.push(path.concat([nextLevel]));
-
     // Decrease available steps
     availableSteps -= Math.sign(availableSteps);
+
+    // Do not continue if next level is out of original array bounds
+    if (nextLevel >= data.length || nextLevel < 0) continue;
+
+    // Do not continue if there is infinity loop with negative numbers
+    if (data[level] + data[nextLevel] <= 0) continue;
+
+    // Add next available path to discovered paths
+    discoveredPaths.push(path.concat([nextLevel]));
   }
 
   return discoveredPaths;
